@@ -14,13 +14,3 @@ flowchart TD
     CompareGuess -->|Too Low| LowMessage[Display 'Too Low'] --> UserInput
     CompareGuess -->|Correct| CorrectMessage[Display 'Correct!']
     CorrectMessage --> End([End])
-1. Start: The game begins.
-2. Generate Random Number: The computer selects a random number within a defined range.
-3. Prompt User for Guess: The user is prompted to input a guess.
-4. Validate Input: The input is checked to ensure it is a valid numeric value.
-    - If invalid, prompt the user to enter a valid guess.
-5. Compare Guess: The guess is compared to the random number.
-    - If too high, display "Too High" and prompt for another guess.
-    - If too low, display "Too Low" and prompt for another guess.
-    - If correct, display "Correct" and end the game.
-6. End: The game terminates when the user guesses correctly.
